@@ -115,7 +115,6 @@
             android:elevation="20dp"
             android:fontFamily="@font/montserrat"
             android:paddingVertical="16dp"
-            android:text="@string/subscribe_button"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
