@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_nav"
+    app:startDestination="@id/generalDetailsFragment2">
+    <fragment
+        android:id="@+id/generalDetailsFragment2"
+        android:name="com.example.students4students.registration.GeneralDetailsFragment"
+        android:label="fragment_general_details"
+        tools:layout="@layout/fragment_general_details" >
+        <action
+            android:id="@+id/goToAccountDetails"
+            app:destination="@id/accountDetailsFragment3"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDetailsFragment3"
+        android:name="com.example.students4students.registration.AccountDetailsFragment"
+        android:label="fragment_account_details"
+        tools:layout="@layout/fragment_account_details" >
+        <action
+            android:id="@+id/backToGeneralDetails"
+            app:destination="@id/generalDetailsFragment2"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/goToProfilePicDetails"
+            app:destination="@id/profilePictureFragment3"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePictureFragment3"
+        android:name="com.example.students4students.registration.ProfilePictureFragment"
+        android:label="fragment_profile_picture"
+        tools:layout="@layout/fragment_profile_picture" >
+        <action
+            android:id="@+id/backToAccountDetails"
+            app:destination="@id/accountDetailsFragment3"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/goToConfirmDetails"
+            app:destination="@id/confirmDetailsFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmDetailsFragment"
+        android:name="com.example.students4students.registration.ConfirmDetailsFragment"
+        android:label="fragment_confirm_details"
+        tools:layout="@layout/fragment_confirm_details" >
+        <action
+            android:id="@+id/backToProfilePicDetails"
+            app:destination="@id/profilePictureFragment3"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>

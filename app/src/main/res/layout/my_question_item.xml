@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card"
+    android:paddingBottom="28dp"
+    android:paddingStart="12dp"
+    android:elevation="20dp"
+    tools:ignore="RtlSymmetry">
+
+
+    <TextView
+        android:id="@+id/myQuestionItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxWidth="210dp"
+        android:maxLines="1"
+        android:text="@string/question_item_title_placeholder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myQuestionItemTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/topic_placeholder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/myQuestionItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionItemTitle" />
+
+    <Button
+        android:id="@+id/myQuestionItemOpenThread"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_card"
+        android:backgroundTint="@color/teal_900"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/open_thread"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/myQuestionItemContent"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionItemContent" />
+
+    <TextView
+        android:id="@+id/myQuestionItemContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="3"
+        android:paddingEnd="12dp"
+        android:text="@string/content_placeholder"
+        android:textColor="#4E4E4E"
+        app:layout_constraintStart_toStartOf="@+id/myQuestionItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/myQuestionItemTopic"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/teal_900"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myQuestionItemTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/montserrat"
+        android:lines="2"
+        android:maxWidth="100dp"
+        android:text="@string/date_placeholder"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myQuestionItemTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

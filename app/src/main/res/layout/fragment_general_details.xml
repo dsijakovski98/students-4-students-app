@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".registration.GeneralDetailsFragment">
+
+    <ImageView
+        android:id="@+id/leaf1_general"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leaf2_general"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="80dp"
+        android:alpha="0.5"
+        android:rotation="22"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf1_general" />
+
+    <ImageView
+        android:id="@+id/leaf3_general"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:alpha="0.5"
+        android:rotation="-80"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf2_general" />
+
+    <View
+        android:id="@+id/semiCircle_general"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/generalDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/general_details"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/first_name_hint"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingStart="0dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_hint"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/generalDetailsTitle"
+        app:layout_constraintStart_toStartOf="@+id/generalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/generalDetailsTitle"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/last_name_hint"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:paddingStart="0dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_hint"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
+        app:layout_constraintStart_toStartOf="@+id/firstNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameInput"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/dateOfBirthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="12dp"
+        android:paddingStart="0dp"
+        android:text="@string/dob"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/lastNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameInput"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/calendarInput"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/default_desc"
+        android:src="@drawable/ic_calendar_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/dateOfBirthText"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameInput"
+        app:layout_constraintTop_toTopOf="@+id/dateOfBirthText" />
+
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="12dp"
+        android:paddingStart="0dp"
+        android:text="@string/gender"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/genderInput"
+        app:layout_constraintStart_toStartOf="@+id/dateOfBirthText"
+        app:layout_constraintTop_toTopOf="@+id/genderInput"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/genderInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:entries="@array/gender"
+        android:popupBackground="@color/teal_700"
+        android:popupElevation="0dp"
+        app:layout_constraintStart_toEndOf="@+id/genderText"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthText" />
+
+    <Button
+        android:id="@+id/continueButton_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/continue_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/semiCircle_general"
+        app:layout_constraintTop_toTopOf="@+id/semiCircle_general" />
+
+    <Button
+        android:id="@+id/cancelBtn_general"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/light_btn"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/cancel_btn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/continueButton_general"
+        app:layout_constraintStart_toStartOf="@+id/continueButton_general"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton_general" />
+
+    <ImageView
+        android:id="@+id/iconBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_birthday"
+        app:layout_constraintBottom_toBottomOf="@+id/dateOfBirthText"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/dateOfBirthText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_name"
+        app:layout_constraintBottom_toBottomOf="@+id/firstNameInput"
+        app:layout_constraintEnd_toStartOf="@+id/firstNameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstNameInput" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_name"
+        app:layout_constraintBottom_toBottomOf="@+id/lastNameInput"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/lastNameInput" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_transgender_24"
+        app:layout_constraintBottom_toBottomOf="@+id/genderText"
+        app:layout_constraintStart_toStartOf="@+id/iconBirthday"
+        app:layout_constraintTop_toTopOf="@+id/genderText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".registration.ConfirmDetailsFragment">
+
+    <ImageView
+        android:id="@+id/leaf1_confirm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leaf2_confirm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="80dp"
+        android:rotation="22"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf1_confirm" />
+
+    <ImageView
+        android:id="@+id/leaf3_confirm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:rotation="-80"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf2_confirm" />
+
+    <View
+        android:id="@+id/semiCircle_confirm"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmDetailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/confirm_details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/firstNameConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/first_name_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDetailsText"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/firstNameConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:text="@string/first_name_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/firstNameConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/lastNameConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="12dp"
+        android:text="@string/last_name_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/confirmDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/confirmDetailsText"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/lastNameConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingEnd="0dp"
+        android:text="@string/last_name_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/nicknameConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/nickname_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameConfirm"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/nicknameConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:text="@string/nickname_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nicknameConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/emailConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/email_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/majorConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/majorConfirm"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/emailConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:text="@string/email_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/emailConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/emailConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/dobConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/date_of_birth_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameConfirm"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/dobConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:text="@string/date_of_birth_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dobConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/dobConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/genderConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="12dp"
+        android:text="@string/gender_hint"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/confirmDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/dobConfirm"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/genderConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingEnd="0dp"
+        android:text="@string/gender_hint"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/genderConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/majorConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/major"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmDetailsText"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameConfirm"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/majorConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:text="@string/major"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/majorConfirmText"
+        app:layout_constraintTop_toBottomOf="@+id/majorConfirmText"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/registerButton_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/register_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/semiCircle_confirm"
+        app:layout_constraintTop_toTopOf="@+id/semiCircle_confirm" />
+
+    <Button
+        android:id="@+id/backBtn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/light_btn"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/back_btn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton_confirm"
+        app:layout_constraintStart_toStartOf="@+id/registerButton_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton_confirm" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/registerProgressBar"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone"
+        app:cpb_stroke_width="8dp"
+        app:cpb_sweep_speed="0.5"
+        app:cpb_rotation_speed="1.5"
+        app:layout_constraintBottom_toBottomOf="@+id/semiCircle_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/semiCircle_confirm" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

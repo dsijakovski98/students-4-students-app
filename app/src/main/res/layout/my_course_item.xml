@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card"
+    android:paddingHorizontal="12dp"
+    android:paddingTop="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/coursePicture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:src="@mipmap/default_school_picture_foreground"
+        app:civ_border_color="@color/teal_700"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/courseListItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:text="@string/course_name_placeholder"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/coursePicture"
+        app:layout_constraintTop_toTopOf="@+id/coursePicture" />
+
+    <TextView
+        android:id="@+id/courseListItemMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/major_placeholder"
+        android:textColor="#222"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/courseListItemName"
+        app:layout_constraintTop_toBottomOf="@+id/courseListItemName" />
+
+    <ImageView
+        android:id="@+id/openCourseDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:scaleX="1.8"
+        android:scaleY="1.6"
+        android:src="@drawable/ic_open_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/coursePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coursePicture"
+        />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/openCourseDetailsButton"
+        app:layout_constraintStart_toStartOf="@+id/courseListItemName"
+        app:layout_constraintTop_toBottomOf="@+id/coursePicture" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

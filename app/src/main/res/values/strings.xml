@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Students 4 Students</string>
+
+    <string name="join_us_message">Join our team!</string>
+    <string name="not_a_member">Not a member yet?</string>
+    <string name="get_started">Sign up</string>
+    <string name="dob">Date of birth</string>
+    <string name="the_forum_app_you_have_been_waiting_for">The forum app students have been waiting for!</string>
+    <string name="log_in_btn">Log in</string>
+    <string name="register_btn">Register</string>
+
+    <!--    HINTS-->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="date_of_birth_hint">Date of Birth</string>
+    <string name="gender_hint">Gender</string>
+    <string name="general_details">General Details</string>
+
+    <!--    BUTTONS-->
+    <string name="continue_btn">Continue</string>
+    <string name="skip_btn">Skip</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="back_btn">Back</string>
+    <string name="default_desc">default desc</string>
+    <string name="account_details">Account Details</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="major">Major</string>
+    <string name="gender">Gender</string>
+    <string name="select_profile_picture">Select Profile Picture</string>
+    <string name="plus_sign">+</string>
+    <string name="add_profile_picture_text">Press the + button to upload a profile picture (optional)</string>
+    <string name="confirm_details">Confirm Details</string>
+
+    <!--    ARRAYS-->
+    <string-array name="gender">
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+        <item name="other">Other</item>
+    </string-array>
+
+    <string-array name="majors">
+        <item name="eaoie">EAOIE</item>
+        <item name="ees">EES</item>
+        <item name="eeum">EEUM</item>
+        <item name="ksiar">KSIAR</item>
+        <item name="kti">KTI</item>
+        <item name="khie">KHIE</item>
+        <item name="tkii">TKII</item>
+    </string-array>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="my_questions">My Questions</string>
+    <string name="find_courses">Courses</string>
+    <string name="find_questions">Find Questions</string>
+    <string name="user_profile">User Profile</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log out</string>
+    <string name="username_placeholder">Username</string>
+    <string name="email_placeholder">email@email.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="application">Application</string>
+    <string name="my_latest_question_title">My Latest Question</string>
+    <string name="my_courses_title">My Courses</string>
+    <string name="view_all_questions">View All</string>
+    <string name="content_placeholder">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</string>
+    <string name="course_name_placeholder">Course Name</string>
+    <string name="major_placeholder">KTI</string>
+    <string name="question_item_title_placeholder">Question item Title</string>
+    <string name="date_placeholder">19 Jul, 2021 23:25</string>
+    <string name="subscribe_button">Subscribe</string>
+    <string name="unsubscribe_button">Unsubscribe</string>
+    <string name="no_questions_courses">You have not asked any questions yet!</string>
+    <string name="ask_question_text">Press the button on the bottom right to ask a question</string>
+    <string name="or">OR</string>
+    <string name="my_question_title_placeholder">My Question Title</string>
+    <string name="open_thread">Open thread</string>
+    <string name="topic_placeholder">Question topic</string>
+    <string name="find_courses_btn">Find Courses</string>
+    <string name="swipe_right_to_find_courses">Swipe right to find courses!</string>
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="topic">Topic</string>
+    <string name="ask_question">Ask Question</string>
+    <string name="no_questions_have_been_asked_yet">No questions about your courses have been asked yet!</string>
+    <string name="comment_btn">Comment</string>
+
+</resources>

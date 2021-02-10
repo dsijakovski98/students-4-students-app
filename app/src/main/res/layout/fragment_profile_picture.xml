@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".registration.ProfilePictureFragment">
+
+    <ImageView
+        android:id="@+id/leaf1_pp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leaf2_pp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="80dp"
+        android:rotation="22"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf1_pp" />
+
+    <ImageView
+        android:id="@+id/leaf3_pp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:rotation="-80"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf2_pp" />
+
+    <View
+        android:id="@+id/semiCircle_profile"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/profilePictureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/select_profile_picture"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clickProfilePicButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="12dp"
+        android:text="@string/add_profile_picture_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicPicker"
+        app:layout_constraintStart_toStartOf="@+id/profilePicPicker"
+        app:layout_constraintTop_toBottomOf="@+id/profilePictureText" />
+
+
+    <ImageView
+        android:id="@+id/profilePicPicker"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/default_profile_picture_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickProfilePicButtonText" />
+
+    <Button
+        android:id="@+id/addPicBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="1"
+        android:elevation="10dp"
+        android:background="@drawable/circle_add_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/plus_sign"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/profilePicPicker"
+        app:layout_constraintEnd_toStartOf="@+id/profilePicPicker"
+        app:layout_constraintStart_toStartOf="@+id/profilePicPicker"
+        app:layout_constraintTop_toBottomOf="@+id/profilePicPicker" />
+
+    <Button
+        android:id="@+id/continueButton_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/continue_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/semiCircle_profile"
+        app:layout_constraintTop_toTopOf="@+id/semiCircle_profile" />
+
+    <Button
+        android:id="@+id/backBtn_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/light_btn"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="30dp"
+        android:text="@string/back_btn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/continueButton_profile"
+        app:layout_constraintStart_toStartOf="@+id/continueButton_profile"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton_profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".AddQuestionActivity">
+
+    <ImageView
+        android:id="@+id/leaf1_account"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.5"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leaf2_account"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:alpha="0.5"
+        android:rotation="-68"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf1_account" />
+
+    <ImageView
+        android:id="@+id/leaf3_account"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="170dp"
+        android:alpha="0.5"
+        android:rotation="-80"
+        android:src="@mipmap/leaf_login_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf2_account" />
+
+    <View
+        android:id="@+id/semiCircle_account"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/askQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Ask Question"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/questionTitleInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/title_hint"
+        android:backgroundTintMode="multiply"
+        android:background="#80016968"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askQuestionText"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/questionContentInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/content_hint"
+        android:backgroundTintMode="multiply"
+        android:background="#80016968"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/questionTitleInput"
+        app:layout_constraintStart_toStartOf="@+id/questionTitleInput"
+        app:layout_constraintTop_toBottomOf="@+id/questionTitleInput" />
+
+
+    <TextView
+        android:id="@+id/questionTopicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="12dp"
+        android:paddingStart="0dp"
+        android:text="@string/topic"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addQuestion_topicSpinner"
+        app:layout_constraintStart_toStartOf="@+id/questionContentInput"
+        app:layout_constraintTop_toTopOf="@+id/addQuestion_topicSpinner"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Spinner
+        android:id="@+id/addQuestion_topicSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:popupBackground="@color/teal_700"
+        android:popupElevation="0dp"
+        app:layout_constraintStart_toEndOf="@+id/questionTopicText"
+        app:layout_constraintTop_toBottomOf="@+id/questionContentInput" />
+
+
+    <Button
+        android:id="@+id/addQuestion_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="25dp"
+        android:text="@string/ask_question"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/semiCircle_account"
+        app:layout_constraintTop_toTopOf="@+id/semiCircle_account" />
+
+    <Button
+        android:id="@+id/addQuestion_back_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/light_btn"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="25dp"
+        android:text="@string/cancel_btn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/addQuestion_btn"
+        app:layout_constraintStart_toStartOf="@+id/addQuestion_btn"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestion_btn" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/addQuestionProgressBar"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone"
+        app:cpb_rotation_speed="1.5"
+        app:cpb_stroke_width="8dp"
+        app:cpb_sweep_speed="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/semiCircle_account"
+        app:layout_constraintEnd_toEndOf="@+id/semiCircle_account" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

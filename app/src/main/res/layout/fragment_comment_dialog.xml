@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_card"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".CommentDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/commentDialogContainer"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_card"
+        android:backgroundTint="@android:color/transparent"
+        android:paddingBottom="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/teal_900"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/commentDialog_closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="20dp"
+            android:padding="12dp"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            android:src="@drawable/ic_exit"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/commentDialog_profilePic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/default_profile_picture_foreground"
+            app:civ_border_color="@color/teal_700"
+            app:civ_border_width="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/commentDialog_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat"
+            android:maxLines="1"
+            android:text="@string/username_placeholder"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/commentDialog_profilePic"
+            app:layout_constraintTop_toTopOf="@+id/commentDialog_profilePic" />
+
+        <EditText
+            android:id="@+id/commentDialog_commentInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/comment_btn"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/commentDialog_profilePic"
+            app:layout_constraintTop_toBottomOf="@+id/commentDialog_profilePic" />
+
+        <Button
+            android:id="@+id/commentDialog_commentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="@color/teal_900"
+            android:elevation="20dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingVertical="16dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="@string/comment_btn"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/commentDialog_commentInput"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/commentDialog_commentInput"
+            app:layout_constraintTop_toBottomOf="@+id/commentDialog_commentInput"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/commentDialog_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/commentDialog_commentButton"
+            app:layout_constraintStart_toStartOf="@+id/commentDialog_commentButton"
+            app:layout_constraintTop_toBottomOf="@+id/commentDialog_commentButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

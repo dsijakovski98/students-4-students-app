@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_questions"
+            android:icon="@drawable/ic_my_questions"
+
+            android:title="@string/my_questions" />
+        <item
+            android:id="@+id/nav_find_courses"
+            android:icon="@drawable/ic_find_courses"
+            android:title="@string/find_courses" />
+        <item
+            android:id="@+id/nav_find_questions"
+            android:icon="@drawable/ic_find_questions"
+            android:title="@string/find_questions" />
+    </group>
+
+    <item android:title="@string/application">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/log_out" />
+        </menu>
+    </item>
+
+</menu>

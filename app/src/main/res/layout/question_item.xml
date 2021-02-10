@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    tools:ignore="RtlSymmetry">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/questionItemUserPicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/default_profile_picture_foreground"
+        app:civ_border_color="@color/teal_700"
+        app:civ_border_width="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/teal_900"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxWidth="180dp"
+        android:maxLines="1"
+        android:text="@string/question_item_title_placeholder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/questionItemUserPicture"
+        app:layout_constraintTop_toTopOf="@+id/questionItemUserPicture" />
+
+    <TextView
+        android:id="@+id/questionItemUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/username_placeholder"
+        android:textColor="#333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/questionItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/questionItemTitle" />
+
+    <TextView
+        android:id="@+id/questionItemTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/date_placeholder"
+        android:textColor="#555"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/questionItemUsername"
+        app:layout_constraintTop_toBottomOf="@+id/questionItemUsername" />
+
+
+    <TextView
+        android:id="@+id/questionItemContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxWidth="280dp"
+        android:maxLines="3"
+        android:text="@string/content_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/questionItemOpenThreadButton"
+        app:layout_constraintEnd_toEndOf="@+id/questionItemTitle"
+        app:layout_constraintStart_toStartOf="@+id/questionItemUserPicture"
+        app:layout_constraintTop_toBottomOf="@+id/questionItemTopicName" />
+
+    <ImageView
+        android:id="@+id/questionItemOpenThreadButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:scaleX="1.8"
+        android:scaleY="1.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_open_arrow" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="-10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/questionItemUserPicture"
+        app:layout_constraintEnd_toEndOf="@+id/questionItemUserPicture"
+        app:layout_constraintStart_toStartOf="@+id/questionItemUserPicture"
+        app:layout_constraintTop_toTopOf="@+id/questionItemUserPicture" />
+
+    <TextView
+        android:id="@+id/questionItemTopicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/topic_placeholder"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="@+id/questionItemUserPicture"
+        app:layout_constraintTop_toBottomOf="@+id/questionItemUserPicture" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
