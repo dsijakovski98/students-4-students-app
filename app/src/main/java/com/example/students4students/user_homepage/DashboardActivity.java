@@ -110,8 +110,14 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
+
+        if(!getTitle().equals("Dashboard")) {
+            setTitle("Dashboard");
+            getSupportFragmentManager().beginTransaction().replace(R.id.dashboard_fragment_container,
+                    new HomepageDashboardFragment()).commit();
+        }
         else {
-            super.onBackPressed();
+            finish();
         }
     }
 
